@@ -22,7 +22,7 @@ then(dataset => {
 
   const yAxisScale = d3.scaleLinear([0, gdpMax], [h, 0]);
   const yScale = d3.scaleLinear([0, gdpMax], [0, h]);
-  console.log(yScale(gdpMax));
+  
   const yAxis = d3.axisLeft(yAxisScale);
   let tooltip = root.append("div").attr("id", "tooltip");
   svg.
